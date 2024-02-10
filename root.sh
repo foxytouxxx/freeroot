@@ -65,32 +65,19 @@ if [ ! -e $ROOTFS_DIR/.installed ]; then
   touch $ROOTFS_DIR/.installed
 fi
 
-BLACK='\e[0;30m'
-BOLD_BLACK='\e[1;30m'
-RED='\e[0;31m'
-BOLD_RED='\e[1;31m'
-GREEN='\e[0;32m'
-BOLD_GREEN='\e[1;32m'
-YELLOW='\e[0;33m'
-BOLD_YELLOW='\e[1;33m'
-BLUE='\e[0;34m'
-BOLD_BLUE='\e[1;34m'
-MAGENTA='\e[0;35m'
-BOLD_MAGENTA='\e[1;35m'
 CYAN='\e[0;36m'
-BOLD_CYAN='\e[1;36m'
 WHITE='\e[0;37m'
-BOLD_WHITE='\e[1;37m'
+
 RESET_COLOR='\e[0m'
 
-display_footer() {
+display_gg() {
   echo -e "${WHITE}___________________________________________________${RESET_COLOR}"
   echo -e ""
-  echo -e "           ${YELLOW}-----> Mission Completed ! <----${RESET_COLOR}"
+  echo -e "           ${CYAN}-----> Mission Completed ! <----${RESET_COLOR}"
 }
 
 clear
-display_footer
+display_gg
 
 $ROOTFS_DIR/usr/local/bin/proot \
   --rootfs="${ROOTFS_DIR}" \
