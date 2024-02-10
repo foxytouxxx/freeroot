@@ -90,8 +90,6 @@ display_footer() {
 }
 
 clear
-display_header
-display_resources
 display_footer
 
 $ROOTFS_DIR/usr/local/bin/proot \
