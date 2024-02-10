@@ -1,7 +1,5 @@
 # Foxytoux Installer
 
-![Foxytoux Logo](https://raw.githubusercontent.com/foxytouxxx/freeroot/main/foxytoux_logo.png)
-
 ## Overview
 
 This shell script is designed to automate the installation of Foxytoux, a lightweight Ubuntu environment using Proot. Foxytoux allows you to run Ubuntu on various CPU architectures, currently supporting x86_64 (amd64) and aarch64 (arm64).
