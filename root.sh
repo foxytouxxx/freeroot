@@ -41,11 +41,11 @@ esac
 
 if [ ! -e $ROOTFS_DIR/.installed ]; then
   mkdir $ROOTFS_DIR/usr/local/bin -p
-  wget --tries=$max_retries --timeout=$timeout --no-hsts -O $ROOTFS_DIR/usr/local/bin/proot "https://raw.githubusercontent.com/dxomg/vpsfreepterovm/main/proot-${ARCH}"
+  wget --tries=$max_retries --timeout=$timeout --no-hsts -O $ROOTFS_DIR/usr/local/bin/proot "https://raw.githubusercontent.com/foxytouxxx/freeroot/main/proot-${ARCH}"
 
   while [ ! -s "$ROOTFS_DIR/usr/local/bin/proot" ]; do
     rm $ROOTFS_DIR/usr/local/bin/proot -rf
-    wget --tries=$max_retries --timeout=$timeout --no-hsts -O $ROOTFS_DIR/usr/local/bin/proot "https://raw.githubusercontent.com/dxomg/vpsfreepterovm/main/proot-${ARCH}"
+    wget --tries=$max_retries --timeout=$timeout --no-hsts -O $ROOTFS_DIR/usr/local/bin/proot "https://raw.githubusercontent.com/foxytouxxx/freeroot/main/proot-${ARCH}"
 
     if [ -s "$ROOTFS_DIR/usr/local/bin/proot" ]; then
       chmod 755 $ROOTFS_DIR/usr/local/bin/proot
