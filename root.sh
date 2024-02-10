@@ -20,7 +20,7 @@ if [ ! -e $ROOTFS_DIR/.installed ]; then
   echo "#"
   echo "#                                      Foxytoux INSTALLER"
   echo "#"
-  echo "#                           Copyright (C) 2024 - 2023, RecodeStudios.Cloud"
+  echo "#                           Copyright (C) 2024, RecodeStudios.Cloud"
   echo "#"
   echo "#"
   echo "#######################################################################################"
