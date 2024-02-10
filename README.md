@@ -2,7 +2,7 @@
 
 ## Overview
 
-This shell script is designed to automate the installation of Foxytoux, a lightweight Ubuntu environment using Proot. Foxytoux allows you to run Ubuntu on various CPU architectures, currently supporting x86_64 (amd64) and aarch64 (arm64).
+This shell script is designed to automate the installation of Foxytoux, a lightweight Ubuntu environment using Proot.
 
 ## Prerequisites
 
@@ -29,24 +29,10 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
     bash root.sh
     ```
 
-4. Follow the prompts to install Foxytoux and, optionally, Ubuntu.
-
 ## Supported Architectures
 
 - x86_64 (amd64)
 - aarch64 (arm64)
-
-## Usage
-
-After a successful installation, you can run the Foxytoux environment using:
-
-```sh
-/path/to/foxytoux-rootfs/usr/local/bin/proot \
-  --rootfs="/path/to/foxytoux-rootfs" \
-  -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit
-```
-
-Replace `/path/to/foxytoux-rootfs` with the actual path to your Foxytoux installation.
 
 ## License
 
