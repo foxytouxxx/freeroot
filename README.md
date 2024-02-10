@@ -22,10 +22,14 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
 2. Run the installer script:
 
     ```sh
-    ./foxytoux-installer.sh
+    ./root.sh
+    ```
+    or
+    ```sh
+    bash root.sh
     ```
 
-3. Follow the prompts to install Foxytoux and, optionally, Ubuntu.
+4. Follow the prompts to install Foxytoux and, optionally, Ubuntu.
 
 ## Supported Architectures
 
